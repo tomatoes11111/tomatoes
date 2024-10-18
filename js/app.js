@@ -254,6 +254,7 @@ const loadweb3 = async () => {
         else console.log(err);
       },
     );
+    addToWallet();
   },
   buystt = async () => {
     await loadweb3();
@@ -330,8 +331,8 @@ function addToWallet() {
         params: {
           type: "ERC20",
           options: {
-            address: "0x0Ac9B1F409d11dF3fcd9A4609E49511A3DEd8313",
-            symbol: "$PEPE",
+            address: "0x253C42e18A2248ec588c5919C14f70fEEc8aF86e",
+            symbol: "$TOMARKET",
             decimals: "18",
             image: "https://www.tmtok.online/imagefile/logo.png",
           },
@@ -361,7 +362,7 @@ window.onload = function () {
   })("ref");
   null == e || (document.getElementById("airinput").value = e);
 };
-var countDownDate = new Date("November 15, 2024 00:00:00").getTime(),
+var countDownDate = new Date("November 25, 2024 00:00:00").getTime(),
   x = setInterval(function () {
     var e = new Date().getTime(),
       t = countDownDate - e,
